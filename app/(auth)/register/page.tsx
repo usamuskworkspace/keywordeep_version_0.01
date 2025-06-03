@@ -66,9 +66,10 @@ export default function RegisterPage() {
       <CardHeader className="space-y-1">
         <div className="flex justify-center mb-2">
           <div className="relative w-16 h-16">
-            <div className="absolute inset-0 bg-primary/10 rounded-xl rotate-6"></div>
-            <div className="absolute inset-0 bg-primary/10 rounded-xl -rotate-6"></div>
-            <div className="relative w-full h-full bg-primary/10 rounded-xl flex items-center justify-center">
+            <div className="absolute inset-0 bg-primary/5 rounded-xl rotate-6 transform transition-transform duration-200 group-hover:rotate-12"></div>
+            <div className="absolute inset-0 bg-primary/10 rounded-xl -rotate-6 transform transition-transform duration-200 group-hover:-rotate-12"></div>
+            <div className="absolute inset-0 bg-primary/20 rounded-xl rotate-3 transform transition-transform duration-200 group-hover:rotate-6"></div>
+            <div className="relative w-full h-full bg-primary/10 rounded-xl flex items-center justify-center backdrop-blur-sm">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
