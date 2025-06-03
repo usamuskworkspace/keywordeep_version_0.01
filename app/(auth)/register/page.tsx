@@ -65,20 +65,25 @@ export default function RegisterPage() {
     <Card>
       <CardHeader className="space-y-1">
         <div className="flex justify-center mb-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="size-10 text-primary"
-          >
-            <circle cx="12" cy="12" r="10" />
-            <line x1="12" y1="16" x2="12" y2="12" />
-            <line x1="12" y1="8" x2="12.01" y2="8" />
-          </svg>
+          <div className="relative w-16 h-16">
+            <div className="absolute inset-0 bg-primary/10 rounded-xl rotate-6"></div>
+            <div className="absolute inset-0 bg-primary/10 rounded-xl -rotate-6"></div>
+            <div className="relative w-full h-full bg-primary/10 rounded-xl flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-8 h-8 text-primary"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.3-4.3" />
+              </svg>
+            </div>
+          </div>
         </div>
         <CardTitle className="text-2xl text-center">Create an account</CardTitle>
         <CardDescription className="text-center">
